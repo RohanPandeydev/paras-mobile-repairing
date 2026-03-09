@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600">
+  <defs>
+    <!-- Phone gradients -->
+    <linearGradient id="hpPhoneOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpPhoneInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpGlow1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="hpGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="hpMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ca3af;stop-opacity:1"/>
+      <stop offset="40%" style="stop-color:#e5e7eb;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#d1d5db;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6b7280;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpHandle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpBackPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#334155;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hpCircuitGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#064e3b;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="hpShadow">
+      <feDropShadow dx="2" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="hpGlowFilter">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hpSoftGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hpInnerShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="hpSmallShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Clip path for screen content -->
+    <clipPath id="screenClip">
+      <rect x="172" y="98" width="156" height="310" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background glow effects -->
+  <ellipse cx="250" cy="280" rx="200" ry="250" fill="url(#hpGlow1)" opacity="0.15" filter="url(#hpSoftGlow)"/>
+  <circle cx="250" cy="250" r="160" fill="#1e40af" opacity="0.05"/>
+  <circle cx="250" cy="250" r="120" fill="#3b82f6" opacity="0.04"/>
+
+  <!-- Orbiting particles -->
+  <circle cx="80" cy="150" r="3" fill="#f59e0b" opacity="0.4" filter="url(#hpGlowFilter)"/>
+  <circle cx="420" cy="200" r="2.5" fill="#60a5fa" opacity="0.5" filter="url(#hpGlowFilter)"/>
+  <circle cx="100" cy="400" r="2" fill="#f59e0b" opacity="0.3" filter="url(#hpGlowFilter)"/>
+  <circle cx="400" cy="420" r="3" fill="#3b82f6" opacity="0.35" filter="url(#hpGlowFilter)"/>
+  <circle cx="350" cy="100" r="2" fill="#f59e0b" opacity="0.4" filter="url(#hpGlowFilter)"/>
+
+  <!-- Back panel / phone internals (separated, offset to left) -->
+  <g filter="url(#hpShadow)" transform="translate(-25, 8) rotate(-3, 250, 280)">
+    <rect x="145" y="72" width="170" height="360" rx="18" fill="url(#hpBackPanel)"/>
+    <rect x="145" y="72" width="170" height="360" rx="18" fill="none" stroke="#475569" stroke-width="1.5"/>
+
+    <!-- Internal circuit board -->
+    <rect x="155" y="100" width="150" height="150" rx="4" fill="url(#hpCircuitGreen)"/>
+    <!-- Circuit traces -->
+    <line x1="160" y1="120" x2="200" y2="120" stroke="#d97706" stroke-width="0.8" opacity="0.5"/>
+    <line x1="160" y1="130" x2="190" y2="130" stroke="#d97706" stroke-width="0.6" opacity="0.4"/>
+    <line x1="160" y1="140" x2="210" y2="140" stroke="#d97706" stroke-width="0.8" opacity="0.5"/>
+    <line x1="260" y1="115" x2="300" y2="115" stroke="#d97706" stroke-width="0.6" opacity="0.4"/>
+    <line x1="250" y1="135" x2="300" y2="135" stroke="#d97706" stroke-width="0.8" opacity="0.5"/>
+    <line x1="265" y1="155" x2="300" y2="155" stroke="#d97706" stroke-width="0.6" opacity="0.4"/>
+    <line x1="180" y1="100" x2="180" y2="145" stroke="#d97706" stroke-width="0.6" opacity="0.35"/>
+    <line x1="280" y1="100" x2="280" y2="140" stroke="#d97706" stroke-width="0.6" opacity="0.35"/>
+
+    <!-- Main chip -->
+    <rect x="210" y="115" width="40" height="40" rx="3" fill="#1f2937" stroke="#374151" stroke-width="0.8"/>
+    <text x="230" y="138" text-anchor="middle" font-family="monospace" font-size="6" fill="#6b7280">A16</text>
+    <!-- Chip pins -->
+    <g fill="#d97706" opacity="0.7">
+      <rect x="215" y="110" width="3" height="6" rx="0.5"/>
+      <rect x="222" y="110" width="3" height="6" rx="0.5"/>
+      <rect x="229" y="110" width="3" height="6" rx="0.5"/>
+      <rect x="236" y="110" width="3" height="6" rx="0.5"/>
+      <rect x="243" y="110" width="3" height="6" rx="0.5"/>
+      <rect x="215" y="154" width="3" height="6" rx="0.5"/>
+      <rect x="222" y="154" width="3" height="6" rx="0.5"/>
+      <rect x="229" y="154" width="3" height="6" rx="0.5"/>
+      <rect x="236" y="154" width="3" height="6" rx="0.5"/>
+      <rect x="243" y="154" width="3" height="6" rx="0.5"/>
+    </g>
+
+    <!-- Smaller chips -->
+    <rect x="165" y="165" width="25" height="18" rx="2" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+    <rect x="200" y="170" width="20" height="14" rx="2" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+    <rect x="270" y="165" width="25" height="18" rx="2" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+
+    <!-- SMD Components -->
+    <g fill="#4b5563" stroke="#6b7280" stroke-width="0.3">
+      <rect x="165" y="195" width="6" height="3" rx="0.5"/>
+      <rect x="175" y="195" width="6" height="3" rx="0.5"/>
+      <rect x="185" y="195" width="6" height="3" rx="0.5"/>
+      <rect x="195" y="195" width="6" height="3" rx="0.5"/>
+      <rect x="275" y="195" width="6" height="3" rx="0.5"/>
+      <rect x="285" y="195" width="6" height="3" rx="0.5"/>
+    </g>
+
+    <!-- Battery area -->
+    <rect x="160" y="260" width="140" height="80" rx="6" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+    <rect x="160" y="260" width="140" height="80" rx="6" fill="none" stroke="#374151" stroke-width="0.8"/>
+    <text x="230" y="305" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b7280">Li-Ion 4500mAh</text>
+    <!-- Battery connector -->
+    <rect x="215" y="252" width="30" height="10" rx="2" fill="#d97706" opacity="0.6"/>
+
+    <!-- Camera module -->
+    <rect x="260" y="82" width="40" height="48" rx="6" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <circle cx="280" cy="100" r="10" fill="#1f2937" stroke="#475569" stroke-width="1.5"/>
+    <circle cx="280" cy="100" r="6" fill="#0f172a"/>
+    <circle cx="280" cy="100" r="3" fill="#1e3a8a" opacity="0.4"/>
+    <circle cx="280" cy="122" r="4" fill="#1f2937" stroke="#475569" stroke-width="0.8"/>
+
+    <!-- Flex cable connector -->
+    <rect x="170" y="345" width="50" height="8" rx="2" fill="#d97706" opacity="0.4"/>
+    <rect x="175" y="360" width="30" height="5" rx="1" fill="#d97706" opacity="0.3"/>
+  </g>
+
+  <!-- Main phone front (offset right, overlapping) -->
+  <g filter="url(#hpShadow)" transform="translate(25, -8) rotate(3, 250, 280)">
+    <!-- Phone frame -->
+    <rect x="160" y="65" width="180" height="380" rx="22" fill="url(#hpPhoneOuter)"/>
+    <!-- Frame highlight -->
+    <rect x="160" y="65" width="180" height="380" rx="22" fill="none" stroke="#475569" stroke-width="2"/>
+    <!-- Side button (volume) -->
+    <rect x="157" y="160" width="4" height="30" rx="1.5" fill="#475569"/>
+    <rect x="157" y="200" width="4" height="30" rx="1.5" fill="#475569"/>
+    <!-- Side button (power) -->
+    <rect x="339" y="180" width="4" height="35" rx="1.5" fill="#475569"/>
+
+    <!-- Screen -->
+    <rect x="170" y="82" width="160" height="326" rx="12" fill="url(#hpPhoneInner)"/>
+    <rect x="172" y="98" width="156" height="310" rx="4" fill="url(#hpScreen)"/>
+
+    <!-- Screen content (clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Status bar -->
+      <rect x="172" y="98" width="156" height="22" fill="#1e3a8a" opacity="0.5"/>
+      <text x="185" y="113" font-family="Arial, sans-serif" font-size="9" fill="#93c5fd">9:41</text>
+      <!-- Signal bars -->
+      <g transform="translate(295, 103)">
+        <rect x="0" y="6" width="3" height="4" rx="0.5" fill="#93c5fd" opacity="0.5"/>
+        <rect x="5" y="4" width="3" height="6" rx="0.5" fill="#93c5fd" opacity="0.6"/>
+        <rect x="10" y="2" width="3" height="8" rx="0.5" fill="#93c5fd" opacity="0.8"/>
+        <rect x="15" y="0" width="3" height="10" rx="0.5" fill="#93c5fd"/>
+      </g>
+      <!-- Battery icon -->
+      <rect x="316" y="104" width="10" height="6" rx="1" fill="none" stroke="#93c5fd" stroke-width="0.8"/>
+      <rect x="326" y="106" width="2" height="2" rx="0.5" fill="#93c5fd"/>
+      <rect x="317" y="105" width="7" height="4" rx="0.5" fill="#22c55e"/>
+
+      <!-- App content simulation -->
+      <!-- Header -->
+      <rect x="182" y="130" width="100" height="6" rx="3" fill="#60a5fa" opacity="0.6"/>
+      <rect x="182" y="142" width="70" height="4" rx="2" fill="#93c5fd" opacity="0.3"/>
+
+      <!-- Card 1 -->
+      <rect x="182" y="158" width="136" height="65" rx="8" fill="#2563eb" opacity="0.3"/>
+      <rect x="192" y="168" width="50" height="5" rx="2.5" fill="#93c5fd" opacity="0.5"/>
+      <rect x="192" y="178" width="80" height="4" rx="2" fill="#93c5fd" opacity="0.3"/>
+      <rect x="192" y="188" width="60" height="4" rx="2" fill="#93c5fd" opacity="0.25"/>
+      <circle cx="295" cy="185" r="15" fill="#1e40af" opacity="0.4"/>
+      <path d="M290,185 L295,178 L300,185 L297,185 L297,192 L293,192 L293,185 Z" fill="#60a5fa" opacity="0.6"/>
+
+      <!-- Card 2 -->
+      <rect x="182" y="232" width="136" height="65" rx="8" fill="#2563eb" opacity="0.25"/>
+      <rect x="192" y="242" width="65" height="5" rx="2.5" fill="#93c5fd" opacity="0.5"/>
+      <rect x="192" y="252" width="90" height="4" rx="2" fill="#93c5fd" opacity="0.3"/>
+      <rect x="192" y="262" width="45" height="4" rx="2" fill="#93c5fd" opacity="0.25"/>
+
+      <!-- Bottom navigation -->
+      <rect x="172" y="370" width="156" height="38" fill="#172554" opacity="0.6"/>
+      <g fill="#60a5fa" opacity="0.5">
+        <circle cx="197" cy="385" r="6"/>
+        <circle cx="232" cy="385" r="6"/>
+        <circle cx="267" cy="385" r="6"/>
+        <circle cx="302" cy="385" r="6"/>
+      </g>
+
+      <!-- Floating action button -->
+      <circle cx="304" cy="350" r="18" fill="#f59e0b" opacity="0.8"/>
+      <line x1="296" y1="350" x2="312" y2="350" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="304" y1="342" x2="304" y2="358" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Dynamic Island / Notch -->
+    <rect x="218" y="84" width="64" height="18" rx="9" fill="#0f172a"/>
+    <circle cx="240" cy="93" r="3.5" fill="#1a1a2e"/>
+    <circle cx="240" cy="93" r="1.5" fill="#1e3a8a" opacity="0.3"/>
+    <circle cx="260" cy="93" r="2" fill="#1a1a2e"/>
+
+    <!-- Screen reflection/glare -->
+    <path d="M172,98 L328,98 L172,250 Z" fill="#fff" opacity="0.03"/>
+
+    <!-- Home indicator -->
+    <rect x="222" y="414" width="56" height="4" rx="2" fill="#475569"/>
+  </g>
+
+  <!-- Opening gap effect (between panels) -->
+  <g opacity="0.6">
+    <line x1="185" y1="90" x2="175" y2="430" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+    <line x1="190" y1="85" x2="180" y2="435" stroke="#f59e0b" stroke-width="0.5" opacity="0.2"/>
+  </g>
+
+  <!-- Pry tool (between panels) -->
+  <g filter="url(#hpSmallShadow)" transform="translate(120, 420) rotate(-20)">
+    <!-- Tool blade -->
+    <path d="M0,0 L30,-5 L55,-3 L58,0 L55,3 L30,5 Z" fill="#3b82f6" opacity="0.9"/>
+    <path d="M0,0 L30,-5 L55,-3 L58,0 L55,3 L30,5 Z" fill="none" stroke="#2563eb" stroke-width="0.8"/>
+    <!-- Tool handle -->
+    <path d="M-5,-8 L0,0 L-5,8 L-45,6 Q-50,0 -45,-6 Z" fill="#1e40af"/>
+    <path d="M-5,-8 L0,0 L-5,8 L-45,6 Q-50,0 -45,-6 Z" fill="none" stroke="#1e3a8a" stroke-width="0.8"/>
+  </g>
+
+  <!-- Screwdriver (bottom-left area) -->
+  <g filter="url(#hpSmallShadow)" transform="translate(40, 340) rotate(35)">
+    <!-- Handle -->
+    <rect x="0" y="0" width="16" height="60" rx="5" fill="url(#hpHandle)"/>
+    <rect x="2" y="5" width="12" height="3" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <rect x="2" y="12" width="12" height="3" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <rect x="2" y="19" width="12" height="3" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <!-- Collar -->
+    <rect x="3" y="-8" width="10" height="10" rx="1.5" fill="#9ca3af"/>
+    <!-- Shaft -->
+    <rect x="5" y="-55" width="6" height="50" rx="1" fill="url(#hpMetal)"/>
+    <!-- Tip -->
+    <polygon points="5,-55 11,-55 9,-65 7,-65" fill="#9ca3af"/>
+  </g>
+
+  <!-- Suction cup (near top of phone) -->
+  <g filter="url(#hpSmallShadow)" transform="translate(140, 50)">
+    <ellipse cx="25" cy="30" rx="18" ry="6" fill="#3b82f6" opacity="0.6"/>
+    <ellipse cx="25" cy="28" rx="15" ry="5" fill="#60a5fa" opacity="0.4"/>
+    <!-- Handle -->
+    <rect x="21" y="5" width="8" height="22" rx="3" fill="#1e40af"/>
+    <!-- Ring -->
+    <ellipse cx="25" cy="5" rx="8" ry="4" fill="none" stroke="#1e40af" stroke-width="2.5"/>
+  </g>
+
+  <!-- Small screws scattered -->
+  <g fill="#9ca3af" opacity="0.5">
+    <circle cx="70" cy="520" r="3.5"/>
+    <line x1="67.5" y1="520" x2="72.5" y2="520" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="70" y1="517.5" x2="70" y2="522.5" stroke="#6b7280" stroke-width="0.8"/>
+
+    <circle cx="430" cy="530" r="3"/>
+    <line x1="427.5" y1="530" x2="432.5" y2="530" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="430" y1="527.5" x2="430" y2="532.5" stroke="#6b7280" stroke-width="0.8"/>
+
+    <circle cx="450" cy="80" r="2.5"/>
+    <line x1="448" y1="80" x2="452" y2="80" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="450" y1="78" x2="450" y2="82" stroke="#6b7280" stroke-width="0.8"/>
+
+    <circle cx="50" cy="100" r="2.5"/>
+    <line x1="48" y1="100" x2="52" y2="100" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="50" y1="98" x2="50" y2="102" stroke="#6b7280" stroke-width="0.8"/>
+  </g>
+
+  <!-- Sparkle/star effects -->
+  <g fill="#f59e0b" filter="url(#hpGlowFilter)">
+    <polygon points="60,200 62,193 64,200 71,202 64,204 62,211 60,204 53,202" opacity="0.7"/>
+    <polygon points="440,300 442,294 444,300 450,302 444,304 442,310 440,304 434,302" opacity="0.6"/>
+    <polygon points="380,80 381.5,75 383,80 388,81.5 383,83 381.5,88 380,83 375,81.5" opacity="0.5"/>
+    <polygon points="100,480 102,474 104,480 109,482 104,484 102,490 100,484 95,482" opacity="0.6"/>
+  </g>
+
+  <!-- Blue sparkles -->
+  <g fill="#60a5fa" filter="url(#hpGlowFilter)">
+    <polygon points="430,450 431.5,445 433,450 438,451.5 433,453 431.5,458 430,453 425,451.5" opacity="0.5"/>
+    <polygon points="60,300 61.5,296 63,300 67,301.5 63,303 61.5,307 60,303 56,301.5" opacity="0.4"/>
+  </g>
+
+  <!-- Floating circuit trace decorations -->
+  <g stroke="#1e40af" stroke-width="1" opacity="0.1" fill="none">
+    <path d="M20,50 L50,50 L50,30 L80,30"/>
+    <path d="M420,550 L450,550 L450,570 L480,570"/>
+    <path d="M400,50 L430,50 L430,70"/>
+    <path d="M20,500 L40,500 L40,520 L60,520"/>
+    <circle cx="80" cy="30" r="3" fill="#1e40af" opacity="0.15"/>
+    <circle cx="420" cy="550" r="3" fill="#1e40af" opacity="0.15"/>
+    <circle cx="430" cy="70" r="2.5" fill="#1e40af" opacity="0.15"/>
+    <circle cx="60" cy="520" r="2.5" fill="#1e40af" opacity="0.15"/>
+  </g>
+</svg>

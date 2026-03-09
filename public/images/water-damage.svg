@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="wdPhoneBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="wdScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="wdShield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="wdDrop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="wdShadow">
+      <feDropShadow dx="1" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="wdGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="wdShieldGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="150" cy="150" r="140" fill="#eff6ff" opacity="0.3"/>
+
+  <!-- Water droplets (behind phone) -->
+  <g opacity="0.3">
+    <path d="M60,80 Q60,65 55,55 Q50,65 50,80 Q50,88 55,92 Q60,88 60,80 Z" fill="url(#wdDrop)"/>
+    <path d="M250,100 Q250,88 246,80 Q242,88 242,100 Q242,106 246,109 Q250,106 250,100 Z" fill="url(#wdDrop)"/>
+    <path d="M40,180 Q40,170 37,164 Q34,170 34,180 Q34,185 37,187 Q40,185 40,180 Z" fill="url(#wdDrop)"/>
+    <path d="M270,200 Q270,190 267,184 Q264,190 264,200 Q264,205 267,207 Q270,205 270,200 Z" fill="url(#wdDrop)"/>
+    <path d="M80,250 Q80,242 77,236 Q74,242 74,250 Q74,254 77,256 Q80,254 80,250 Z" fill="url(#wdDrop)"/>
+    <path d="M230,50 Q230,42 227,36 Q224,42 224,50 Q224,54 227,56 Q230,54 230,50 Z" fill="url(#wdDrop)"/>
+  </g>
+
+  <!-- Phone -->
+  <g filter="url(#wdShadow)">
+    <rect x="95" y="45" width="110" height="210" rx="12" fill="url(#wdPhoneBody)"/>
+    <rect x="95" y="45" width="110" height="210" rx="12" fill="none" stroke="#334155" stroke-width="1.5"/>
+    <!-- Screen -->
+    <rect x="103" y="62" width="94" height="175" rx="3" fill="url(#wdScreen)"/>
+    <!-- Camera -->
+    <circle cx="150" cy="53" r="3" fill="#1f2937"/>
+    <!-- Home indicator -->
+    <rect x="133" y="245" width="34" height="3" rx="1.5" fill="#334155"/>
+    <!-- Screen content -->
+    <rect x="113" y="80" width="60" height="4" rx="2" fill="#60a5fa" opacity="0.5"/>
+    <rect x="113" y="90" width="74" height="4" rx="2" fill="#60a5fa" opacity="0.4"/>
+    <rect x="113" y="105" width="74" height="45" rx="4" fill="#2563eb" opacity="0.3"/>
+    <rect x="113" y="160" width="50" height="4" rx="2" fill="#60a5fa" opacity="0.4"/>
+    <rect x="113" y="172" width="65" height="4" rx="2" fill="#60a5fa" opacity="0.3"/>
+  </g>
+
+  <!-- Water drops on phone -->
+  <g>
+    <path d="M120,75 Q120,70 118,67 Q116,70 116,75 Q116,78 118,79 Q120,78 120,75 Z" fill="url(#wdDrop)" opacity="0.7"/>
+    <path d="M175,130 Q175,124 173,120 Q171,124 171,130 Q171,134 173,135 Q175,134 175,130 Z" fill="url(#wdDrop)" opacity="0.6"/>
+    <path d="M130,195 Q130,190 128,187 Q126,190 126,195 Q126,198 128,199 Q130,198 130,195 Z" fill="url(#wdDrop)" opacity="0.7"/>
+    <ellipse cx="160" cy="165" rx="5" ry="3" fill="#93c5fd" opacity="0.3"/>
+    <ellipse cx="140" cy="140" rx="4" ry="2.5" fill="#93c5fd" opacity="0.25"/>
+  </g>
+
+  <!-- Shield overlay -->
+  <g filter="url(#wdShieldGlow)" transform="translate(150, 145)">
+    <!-- Shield shape -->
+    <path d="M0,-75 L55,-55 L55,10 Q55,55 0,80 Q-55,55 -55,10 L-55,-55 Z" fill="url(#wdShield)" opacity="0.25" stroke="#3b82f6" stroke-width="2"/>
+    <!-- Checkmark inside shield -->
+    <polyline points="-18,5 -5,20 22,-12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+
+  <!-- Water splash effect at bottom -->
+  <g opacity="0.2" fill="#60a5fa">
+    <ellipse cx="150" cy="275" rx="80" ry="10"/>
+    <path d="M100,270 Q95,260 90,270 Q95,265 100,270 Z"/>
+    <path d="M200,270 Q205,260 210,270 Q205,265 200,270 Z"/>
+  </g>
+
+  <!-- Sparkle effects -->
+  <g fill="#f59e0b" filter="url(#wdGlow)">
+    <polygon points="70,50 71.5,45 73,50 78,51.5 73,53 71.5,58 70,53 65,51.5" opacity="0.6"/>
+    <polygon points="240,150 241.5,146 243,150 247,151.5 243,153 241.5,157 240,153 236,151.5" opacity="0.5"/>
+  </g>
+</svg>

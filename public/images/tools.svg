@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="tlMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ca3af;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#d1d5db;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6b7280;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tlHandle1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tlHandle2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tlRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tlHeatGun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tlMultimeter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="tlShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="150" cy="150" r="140" fill="#f8fafc" opacity="0.3"/>
+
+  <!-- Phillips Screwdriver (left) -->
+  <g filter="url(#tlShadow)" transform="translate(25, 30) rotate(-15, 40, 130)">
+    <!-- Handle -->
+    <rect x="30" y="140" width="22" height="80" rx="6" fill="url(#tlHandle1)"/>
+    <rect x="32" y="148" width="18" height="4" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <rect x="32" y="158" width="18" height="4" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <rect x="32" y="168" width="18" height="4" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <rect x="32" y="178" width="18" height="4" rx="1" fill="#fbbf24" opacity="0.5"/>
+    <!-- End cap -->
+    <rect x="30" y="215" width="22" height="8" rx="4" fill="#d97706"/>
+    <!-- Metal collar -->
+    <rect x="34" y="132" width="14" height="12" rx="2" fill="#9ca3af"/>
+    <!-- Shaft -->
+    <rect x="37" y="50" width="8" height="85" rx="2" fill="url(#tlMetal)"/>
+    <!-- Phillips tip -->
+    <polygon points="37,50 45,50 43,35 39,35" fill="#9ca3af"/>
+    <line x1="41" y1="35" x2="41" y2="50" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="37" y1="43" x2="45" y2="43" stroke="#6b7280" stroke-width="0.8"/>
+  </g>
+
+  <!-- Flathead Screwdriver (center-left) -->
+  <g filter="url(#tlShadow)" transform="translate(75, 20) rotate(5, 40, 130)">
+    <!-- Handle -->
+    <rect x="32" y="145" width="20" height="75" rx="5" fill="url(#tlHandle2)"/>
+    <rect x="34" y="152" width="16" height="3" rx="1" fill="#3b82f6" opacity="0.5"/>
+    <rect x="34" y="160" width="16" height="3" rx="1" fill="#3b82f6" opacity="0.5"/>
+    <rect x="34" y="168" width="16" height="3" rx="1" fill="#3b82f6" opacity="0.5"/>
+    <!-- End cap -->
+    <rect x="32" y="215" width="20" height="7" rx="3.5" fill="#1e3a8a"/>
+    <!-- Metal collar -->
+    <rect x="36" y="137" width="12" height="12" rx="2" fill="#9ca3af"/>
+    <!-- Shaft -->
+    <rect x="38" y="55" width="7" height="85" rx="1.5" fill="url(#tlMetal)"/>
+    <!-- Flat tip -->
+    <rect x="35" y="45" width="13" height="12" rx="1" fill="#9ca3af"/>
+  </g>
+
+  <!-- Heat Gun (center-right) -->
+  <g filter="url(#tlShadow)" transform="translate(145, 50)">
+    <!-- Body -->
+    <rect x="10" y="60" width="55" height="80" rx="8" fill="url(#tlHeatGun)"/>
+    <rect x="10" y="60" width="55" height="80" rx="8" fill="none" stroke="#4b5563" stroke-width="1"/>
+    <!-- Nozzle -->
+    <path d="M18,60 L18,30 Q18,22 25,22 L50,22 Q57,22 57,30 L57,60" fill="#4b5563" stroke="#6b7280" stroke-width="1"/>
+    <!-- Nozzle opening -->
+    <rect x="22" y="22" width="31" height="8" rx="2" fill="#1f2937"/>
+    <!-- Heat waves -->
+    <path d="M28,18 Q30,10 32,18" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M36,15 Q38,5 40,15" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M44,18 Q46,10 48,18" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Handle -->
+    <rect x="20" y="138" width="35" height="50" rx="5" fill="#374151"/>
+    <rect x="20" y="138" width="35" height="50" rx="5" fill="none" stroke="#4b5563" stroke-width="1"/>
+    <!-- Button -->
+    <rect x="30" y="72" width="15" height="8" rx="2" fill="url(#tlRed)"/>
+    <!-- Vents -->
+    <line x1="18" y1="95" x2="65" y2="95" stroke="#4b5563" stroke-width="0.5"/>
+    <line x1="18" y1="100" x2="65" y2="100" stroke="#4b5563" stroke-width="0.5"/>
+    <line x1="18" y1="105" x2="65" y2="105" stroke="#4b5563" stroke-width="0.5"/>
+    <line x1="18" y1="110" x2="65" y2="110" stroke="#4b5563" stroke-width="0.5"/>
+    <!-- Power cord -->
+    <path d="M37,188 Q37,200 30,210 Q20,225 25,240" stroke="#4b5563" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tweezers (right) -->
+  <g filter="url(#tlShadow)" transform="translate(225, 25) rotate(10, 20, 120)">
+    <!-- Left arm -->
+    <path d="M18,20 Q14,80 8,160 L11,162 Q17,85 21,22 Z" fill="url(#tlMetal)"/>
+    <!-- Right arm -->
+    <path d="M28,20 Q34,80 40,160 L37,162 Q31,85 25,22 Z" fill="url(#tlMetal)"/>
+    <!-- Joint/bend -->
+    <path d="M18,20 Q23,12 28,20" fill="#d1d5db"/>
+    <!-- Pointed tips -->
+    <path d="M8,160 L6,172 L11,162 Z" fill="#9ca3af"/>
+    <path d="M40,160 L42,172 L37,162 Z" fill="#9ca3af"/>
+    <!-- Grip ridges -->
+    <line x1="16" y1="60" x2="20" y2="60" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="15" y1="70" x2="20" y2="70" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="14" y1="80" x2="19" y2="80" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="29" y1="60" x2="33" y2="60" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="30" y1="70" x2="34" y2="70" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="31" y1="80" x2="35" y2="80" stroke="#6b7280" stroke-width="0.8"/>
+  </g>
+
+  <!-- Multimeter (bottom center) -->
+  <g filter="url(#tlShadow)" transform="translate(90, 195)">
+    <!-- Body -->
+    <rect x="0" y="0" width="70" height="90" rx="6" fill="url(#tlMultimeter)"/>
+    <rect x="0" y="0" width="70" height="90" rx="6" fill="none" stroke="#d97706" stroke-width="1"/>
+    <!-- Screen -->
+    <rect x="8" y="8" width="54" height="28" rx="3" fill="#d1fae5" stroke="#6b7280" stroke-width="0.5"/>
+    <!-- Display reading -->
+    <text x="35" y="28" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#065f46">12.5V</text>
+    <!-- Dial -->
+    <circle cx="35" cy="55" r="14" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+    <circle cx="35" cy="55" r="2" fill="#ef4444"/>
+    <line x1="35" y1="55" x2="42" y2="47" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Dial markings -->
+    <g stroke="#9ca3af" stroke-width="0.5">
+      <line x1="35" y1="42" x2="35" y2="44"/>
+      <line x1="47" y1="48" x2="46" y2="50"/>
+      <line x1="49" y1="55" x2="47" y2="55"/>
+      <line x1="47" y1="62" x2="46" y2="60"/>
+      <line x1="35" y1="68" x2="35" y2="66"/>
+      <line x1="23" y1="62" x2="24" y2="60"/>
+      <line x1="21" y1="55" x2="23" y2="55"/>
+      <line x1="23" y1="48" x2="24" y2="50"/>
+    </g>
+    <!-- Probe ports -->
+    <circle cx="20" cy="82" r="3.5" fill="#1f2937" stroke="#6b7280" stroke-width="0.8"/>
+    <circle cx="50" cy="82" r="3.5" fill="#1f2937" stroke="#6b7280" stroke-width="0.8"/>
+    <!-- Probe wires -->
+    <path d="M20,85 Q15,95 10,100 L10,105" stroke="#ef4444" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M50,85 Q55,95 60,100 L60,105" stroke="#111827" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Decorative screws -->
+  <g fill="#9ca3af" opacity="0.3">
+    <circle cx="20" cy="20" r="3"/>
+    <line x1="18" y1="20" x2="22" y2="20" stroke="#6b7280" stroke-width="0.8"/>
+    <circle cx="280" cy="280" r="3"/>
+    <line x1="278" y1="280" x2="282" y2="280" stroke="#6b7280" stroke-width="0.8"/>
+  </g>
+</svg>
