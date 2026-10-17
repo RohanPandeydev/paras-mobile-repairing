@@ -32,6 +32,9 @@ export default function Footer() {
               Mobile repair shop in Behala for 10+ years. Free check-up,
               quality-checked parts, and the price told before every repair.
             </p>
+            <p className="text-[#8494a7] text-xs leading-relaxed mt-3">
+              Serving Behala, Thakurpukur, Sarsuna, Parnasree, Taratala and Joka.
+            </p>
           </div>
 
           {/* Quick Links */}

@@ -44,7 +44,7 @@ export default function Navbar() {
               <Wrench className="text-white" size={18} />
             </div>
             <div className="notranslate" translate="no">
-              <h1 className="text-base font-black leading-tight text-white/90">PARAS MOBILE</h1>
+              <p className="text-base font-black leading-tight text-white/90">PARAS MOBILE</p>
               <p className="text-[8px] text-primary/60 font-bold tracking-[0.2em]">REPAIR & SERVICE CENTRE</p>
             </div>
           </a>

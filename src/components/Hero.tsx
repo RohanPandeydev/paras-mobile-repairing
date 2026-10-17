@@ -69,13 +69,16 @@ export default function Hero() {
               <span className="text-sm text-primary-light font-semibold">4.8★ on Google</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-black leading-[1.1] animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-black leading-[1.1] animate-fade-in-up">
+              <span className="block text-sm md:text-base font-bold tracking-[0.15em] uppercase text-primary-light mb-3">
+                Mobile Phone Repair in Behala, Kolkata
+              </span>
               We Fix What
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-light to-amber-400">
                 Others Can&apos;t
               </span>
-            </h2>
+            </h1>
 
             <p className="text-lg text-gray-400 mt-6 max-w-xl animate-fade-in-up delay-200 opacity-0 leading-relaxed">
               Mobile repair in Behala for 10+ years. From cracked screens
@@ -138,7 +141,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
-        <a href="#services" className="text-primary/50 bounce-down block">
+        <a href="#services" aria-label="Scroll to services" className="text-primary/50 bounce-down block">
           <ChevronDown size={28} />
         </a>
       </div>
