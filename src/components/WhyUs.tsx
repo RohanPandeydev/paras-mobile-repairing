@@ -66,8 +66,8 @@ const reasons = [
 ];
 
 const stats = [
-  { icon: Smartphone, value: "All", label: "Brands Repaired" },
-  { icon: Users, value: "7 Days", label: "Open a Week" },
+  { icon: Smartphone, value: "5000+", label: "Phones Repaired" },
+  { icon: Users, value: "All", label: "Brands Repaired" },
   { icon: Award, value: "10+", label: "Years Experience" },
   { icon: ThumbsUp, value: "4.8★", label: "Google Rating" },
 ];
