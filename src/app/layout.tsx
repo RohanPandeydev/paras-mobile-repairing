@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "iPhone repair Behala",
   ],
   alternates: { canonical: "/" },
+  verification: { google: "CXfOxAbZa6Etlf9kJzS9hIMEbZYI81txRU4it9ynkN4" },
   robots: { index: true, follow: true },
   openGraph: {
     title: TITLE,
