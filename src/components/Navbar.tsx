@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Phone, Menu, X, MapPin, Wrench } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -25,10 +26,13 @@ export default function Navbar() {
             <span className="hidden sm:inline">151, Diamond Harbour Rd, Behala, Kolkata</span>
             <span className="sm:hidden">Behala, Kolkata</span>
           </div>
-          <a href="tel:+918981572938" className="flex items-center gap-1.5 text-primary/80 hover:text-primary transition-colors font-medium">
-            <Phone size={11} />
-            <span>089815 72938</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <LanguageSwitcher />
+            <a href="tel:+918981572938" className="hidden sm:flex items-center gap-1.5 text-primary/80 hover:text-primary transition-colors font-medium">
+              <Phone size={11} />
+              <span>089815 72938</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -39,7 +43,7 @@ export default function Navbar() {
             <div className="w-9 h-9 bg-gradient-to-br from-primary/90 to-primary-dark/90 rounded-xl flex items-center justify-center shadow-lg shadow-primary/10">
               <Wrench className="text-white" size={18} />
             </div>
-            <div>
+            <div className="notranslate" translate="no">
               <h1 className="text-base font-black leading-tight text-white/90">PARAS MOBILE</h1>
               <p className="text-[8px] text-primary/60 font-bold tracking-[0.2em]">REPAIR & SERVICE CENTRE</p>
             </div>

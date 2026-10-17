@@ -286,3 +286,24 @@ html {
   background: rgba(232, 133, 59, 0.3);
   color: white;
 }
+
+/* Google Translate: we show our own EN / हिंदी / বাংলা switcher, so hide Google's bar, popups and highlights */
+.goog-te-banner-frame,
+iframe.skiptranslate,
+.skiptranslate > iframe,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-yAWNEb-L7lbkb {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+.goog-text-highlight,
+font[style] {
+  background: none !important;
+  box-shadow: none !important;
+}
