@@ -21,6 +21,7 @@ const featuredServices = [
   {
     icon: Monitor,
     title: "Screen Replacement",
+    slug: "screen-replacement-behala",
     description:
       "Cracked or broken screen? Replacement displays for Samsung, iPhone, Vivo, Oppo, Realme & more.",
     gradient: "from-orange-600/90 to-red-700/90",
@@ -30,6 +31,7 @@ const featuredServices = [
   {
     icon: Battery,
     title: "Battery Replacement",
+    slug: "battery-replacement-behala",
     description:
       "Phone draining fast? New battery fitted, with a battery health check.",
     gradient: "from-green-600/90 to-emerald-700/90",
@@ -39,6 +41,7 @@ const featuredServices = [
   {
     icon: Cpu,
     title: "Motherboard Repair",
+    slug: "dead-phone-motherboard-repair-behala",
     description:
       "Expert chip-level repair for dead phones, restart issues, and network problems.",
     gradient: "from-purple-600/90 to-indigo-700/90",
@@ -48,6 +51,7 @@ const featuredServices = [
   {
     icon: Droplets,
     title: "Water Damage Repair",
+    slug: "water-damage-phone-repair-behala",
     description:
       "Dropped in water? Ultrasonic cleaning and micro-soldering to save your device.",
     gradient: "from-cyan-600/90 to-blue-700/90",
@@ -134,10 +138,10 @@ export default function Services() {
                 <div className="flex items-center justify-between">
                   <span className="text-primary font-black text-lg">{service.price}</span>
                   <a
-                    href="tel:+918981572938"
-                    className="flex items-center gap-1 text-sm font-semibold text-[#5a6a7e] hover:text-primary group-hover:text-primary transition-colors group-hover:gap-2"
+                    href={`/${service.slug}`}
+                    className="flex items-center gap-1 text-sm font-semibold text-[#8494a7] hover:text-primary group-hover:text-primary transition-colors group-hover:gap-2"
                   >
-                    Book Now <ArrowRight size={14} />
+                    Details &amp; price <ArrowRight size={14} />
                   </a>
                 </div>
               </div>

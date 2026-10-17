@@ -1,4 +1,5 @@
 import { Phone, MapPin, Clock, Heart, Wrench, Cpu, Smartphone } from "lucide-react";
+import { SERVICES } from "@/lib/services";
 
 export default function Footer() {
   return (
@@ -44,7 +45,7 @@ export default function Footer() {
               {["Home", "Services", "Pricing", "Reviews", "Contact"].map((link) => (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={`/#${link.toLowerCase()}`}
                     className="hover:text-primary transition-colors flex items-center gap-2"
                   >
                     <span className="w-1 h-1 bg-primary/50 rounded-full" />
@@ -59,17 +60,12 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-primary">Top Services</h4>
             <ul className="space-y-2.5 text-sm text-[#8494a7]">
-              {[
-                "Screen Replacement",
-                "Battery Replacement",
-                "Water Damage Repair",
-                "Software / OS Fix",
-                "Motherboard Repair",
-                "Data Recovery",
-              ].map((service) => (
-                <li key={service} className="flex items-center gap-2">
-                  <span className="w-1 h-1 bg-primary/50 rounded-full" />
-                  {service}
+              {SERVICES.map((service) => (
+                <li key={service.slug}>
+                  <a href={`/${service.slug}`} className="hover:text-primary transition-colors flex items-center gap-2">
+                    <span className="w-1 h-1 bg-primary/50 rounded-full" />
+                    {service.name}
+                  </a>
                 </li>
               ))}
             </ul>

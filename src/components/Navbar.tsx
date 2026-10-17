@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import { Phone, Menu, X, MapPin, Wrench } from "lucide-react";
+import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "Why Us", href: "/#why-us" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -39,7 +40,7 @@ export default function Navbar() {
       {/* Main nav */}
       <div className="glass">
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          <a href="#home" className="flex items-center gap-2.5 group">
+          <Link href="/#home" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 bg-gradient-to-br from-primary/90 to-primary-dark/90 rounded-xl flex items-center justify-center shadow-lg shadow-primary/10">
               <Wrench className="text-white" size={18} />
             </div>
@@ -47,7 +48,7 @@ export default function Navbar() {
               <p className="text-base font-black leading-tight text-white/90">PARAS MOBILE</p>
               <p className="text-[8px] text-primary/60 font-bold tracking-[0.2em]">REPAIR & SERVICE CENTRE</p>
             </div>
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
