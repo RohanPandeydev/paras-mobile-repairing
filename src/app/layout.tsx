@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Paras Mobile Repairing & Service Centre",
     description:
-      "Your trusted mobile repair partner in Behala, Kolkata. Quick fixes, genuine parts, affordable prices.",
+      "Mobile phone repair in Behala, Kolkata. Free check-up, quality-checked parts, price told before repair.",
     type: "website",
     locale: "en_IN",
   },

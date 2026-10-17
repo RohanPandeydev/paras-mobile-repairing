@@ -78,17 +78,17 @@ export default function Hero() {
             </h2>
 
             <p className="text-lg text-gray-400 mt-6 max-w-xl animate-fade-in-up delay-200 opacity-0 leading-relaxed">
-              Behala&apos;s most trusted mobile repair centre. From cracked screens
+              Mobile repair in Behala for 10+ years. From cracked screens
               to dead motherboards — we bring your phone back to life with
-              <span className="text-primary font-semibold"> genuine parts</span> and
+              <span className="text-primary font-semibold"> quality-checked parts</span> and
               <span className="text-cyan-400 font-semibold"> expert hands</span>.
             </p>
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-5 mt-8 animate-fade-in-up delay-300 opacity-0">
               {[
-                { icon: Clock, label: "30 Min Fix", color: "text-green-400", bg: "bg-green-400/10 border-green-400/20" },
-                { icon: Shield, label: "Warranty", color: "text-primary", bg: "bg-primary/10 border-primary/20" },
+                { icon: Clock, label: "Free Check-up", color: "text-green-400", bg: "bg-green-400/10 border-green-400/20" },
+                { icon: Shield, label: "15+ Day Warranty", color: "text-primary", bg: "bg-primary/10 border-primary/20" },
                 { icon: Wrench, label: "10+ Years", color: "text-cyan-400", bg: "bg-cyan-400/10 border-cyan-400/20" },
               ].map((badge) => (
                 <div key={badge.label} className={`flex items-center gap-2 ${badge.bg} border rounded-full px-4 py-2`}>

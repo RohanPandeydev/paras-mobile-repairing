@@ -17,17 +17,17 @@ import {
 const reasons = [
   {
     icon: Clock,
-    title: "30-Minute Quick Repair",
+    title: "Quick Repairs",
     description:
-      "Most common repairs done in 30 minutes. No need to leave your phone for days.",
+      "Simple repairs are often done while you wait. We tell you the expected time before we start.",
     accent: "from-green-600/90 to-emerald-700/90",
     number: "01",
   },
   {
     icon: BadgeCheck,
-    title: "Genuine Quality Parts",
+    title: "Quality-Checked Parts",
     description:
-      "Only OEM-grade parts that match original quality. No cheap duplicates.",
+      "Every part is checked before fitting. We tell you which part goes in and its price before the repair.",
     accent: "from-blue-600/90 to-indigo-700/90",
     number: "02",
   },
@@ -43,7 +43,7 @@ const reasons = [
     icon: Shield,
     title: "Warranty on Repairs",
     description:
-      "Service warranty on every repair. Same issue? We fix it free.",
+      "Every repair comes with a warranty of at least 15 days. The exact period depends on the repair and is written on your bill.",
     accent: "from-purple-600/90 to-violet-700/90",
     number: "04",
   },
@@ -66,8 +66,8 @@ const reasons = [
 ];
 
 const stats = [
-  { icon: Users, value: "1400+", label: "Happy Customers" },
-  { icon: Smartphone, value: "2000+", label: "Phones Repaired" },
+  { icon: Smartphone, value: "All", label: "Brands Repaired" },
+  { icon: Users, value: "7 Days", label: "Open a Week" },
   { icon: Award, value: "10+", label: "Years Experience" },
   { icon: ThumbsUp, value: "4.8★", label: "Google Rating" },
 ];
@@ -127,8 +127,7 @@ export default function WhyUs() {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-white/90">
-            Trusted by <span className="gradient-text">Thousands</span> in
-            Kolkata
+            Why Behala Chooses <span className="gradient-text">Paras</span>
           </h2>
           <p className="text-[#8494a7] mt-4">
             We don&apos;t just fix phones — we build trust. Here&apos;s why

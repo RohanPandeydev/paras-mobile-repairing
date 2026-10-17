@@ -22,7 +22,7 @@ const featuredServices = [
     icon: Monitor,
     title: "Screen Replacement",
     description:
-      "Cracked or broken screen? OEM-quality displays for Samsung, iPhone, Vivo, Oppo, Realme & more.",
+      "Cracked or broken screen? Replacement displays for Samsung, iPhone, Vivo, Oppo, Realme & more.",
     gradient: "from-orange-600/90 to-red-700/90",
     price: "₹800+",
     tag: "Most Popular",
@@ -31,7 +31,7 @@ const featuredServices = [
     icon: Battery,
     title: "Battery Replacement",
     description:
-      "Phone draining fast? Genuine battery replacement with health check & optimization.",
+      "Phone draining fast? New battery fitted, with a battery health check.",
     gradient: "from-green-600/90 to-emerald-700/90",
     price: "₹500+",
     tag: "Quick Fix",

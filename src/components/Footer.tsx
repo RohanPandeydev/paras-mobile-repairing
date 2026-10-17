@@ -29,8 +29,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[#8494a7] text-sm leading-relaxed">
-              Behala&apos;s most trusted mobile repair shop. Quick repairs,
-              genuine parts, and honest service for 10+ years.
+              Mobile repair shop in Behala for 10+ years. Free check-up,
+              quality-checked parts, and the price told before every repair.
             </p>
           </div>
 
@@ -99,6 +99,9 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} Paras Mobile Repairing & Service
             Centre. All rights reserved.
+          </p>
+          <p className="mt-1 text-xs">
+            Independent repair shop — not an authorised service centre of any phone brand. Offers: T&amp;C apply, ask at the shop.
           </p>
           <p className="mt-1 flex items-center justify-center gap-1">
             Made with <Heart size={14} className="text-red-500 fill-red-500" /> in Kolkata
