@@ -28,7 +28,7 @@ const reviews = [
   {
     name: "Sayan Dutta",
     rating: 4,
-    text: "Good service and reliable repair work. Recommended for mobile repairs in Behala area.",
+    text: "",
     time: "6 months ago",
     initial: "S",
     color: "from-purple-600/90 to-violet-700/90",
@@ -37,7 +37,7 @@ const reviews = [
   {
     name: "Rahul Yadav",
     rating: 5,
-    text: "Great experience! Got my phone repaired quickly and at a very fair price. Will visit again.",
+    text: "",
     time: "2 years ago",
     initial: "R",
     color: "from-amber-600/90 to-orange-700/90",
@@ -116,10 +116,14 @@ export default function Reviews() {
                 ))}
               </div>
 
-              {/* Text */}
-              <p className="text-[#8494a7] leading-relaxed mb-5">
-                &ldquo;{review.text}&rdquo;
-              </p>
+              {/* Text — star-only Google reviews have no quote; never invent one */}
+              {review.text ? (
+                <p className="text-[#8494a7] leading-relaxed mb-5">
+                  &ldquo;{review.text}&rdquo;
+                </p>
+              ) : (
+                <p className="text-[#5a6a7e] text-sm italic mb-5">Star rating on Google, no written review.</p>
+              )}
 
               {/* Author */}
               <div className="flex items-center gap-3 border-t border-[#1e2738] pt-4">
@@ -145,7 +149,7 @@ export default function Reviews() {
         {/* CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://www.google.com/maps/place/PARAS+MOBILE+REPAIRING+AND+SERVICE+CENTRE/@22.5067602,88.3202662,17z"
+            href="https://g.page/r/CcIFu_h6coOuEBM/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#161e2a] text-white/90 px-8 py-3.5 rounded-full font-bold hover:bg-[#1e2738] transition-all shadow-lg hover:scale-105 border border-[#2a3545]"
