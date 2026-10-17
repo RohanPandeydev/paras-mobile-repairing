@@ -6,7 +6,6 @@ import BrandsWeRepair from "@/components/BrandsWeRepair";
 import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
-import BusinessTips from "@/components/BusinessTips";
 import FloatingCTA from "@/components/FloatingCTA";
 import Footer from "@/components/Footer";
 
@@ -20,7 +19,6 @@ export default function Home() {
       <BrandsWeRepair />
       <Pricing />
       <Reviews />
-      <BusinessTips />
       <Contact />
       <Footer />
       <FloatingCTA />
