@@ -31,7 +31,6 @@ const pricingData = [
       { name: "Software / Flashing", price: "₹300 - ₹800" },
       { name: "Virus Removal", price: "₹200 - ₹500" },
       { name: "Data Recovery", price: "₹500 - ₹2,000" },
-      { name: "FRP / Pattern Unlock", price: "₹300 - ₹1,000" },
     ],
   },
   {
