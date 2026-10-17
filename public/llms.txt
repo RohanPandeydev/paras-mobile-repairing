@@ -1,0 +1,26 @@
+# Paras Mobile Repairing & Service Centre
+
+> Independent mobile phone repair shop in Behala, Kolkata, India — 10+ years, 5000+ phones repaired. Repairs all brands (iPhone, Samsung, Vivo, Oppo, Realme, Redmi/Xiaomi, OnePlus, Motorola). Free check-up; the exact price is told before any repair. Not an authorised service centre of any phone brand.
+
+## Contact and location
+- Address: 151, Diamond Harbour Road (D.H. Road), Behala, near Balananda Hospital, Kolkata 700034, West Bengal
+- Phone / WhatsApp: +91 89815 72938
+- Hours: Monday to Sunday, 10:00 AM – 10:00 PM
+- Areas served: Behala, Thakurpukur, Sarsuna, Parnasree, Taratala, Joka
+- Google Maps: https://maps.google.com/?cid=12575020457033139650
+- Facebook: https://www.facebook.com/profile.php?id=61595165264713
+
+## Services and standard prices (exact price after free check-up)
+- [Screen replacement](https://paras-mobile-repairing.vercel.app/screen-replacement-behala): LCD ₹800–₹2,500; AMOLED ₹2,000–₹6,000; iPhone ₹2,500–₹12,000
+- [Battery replacement](https://paras-mobile-repairing.vercel.app/battery-replacement-behala): Android ₹500–₹1,500; iPhone ₹1,200–₹3,000
+- [Charging port repair](https://paras-mobile-repairing.vercel.app/charging-port-repair-behala): ₹300–₹800; fast-charging IC ₹500–₹1,500
+- [iPhone repair](https://paras-mobile-repairing.vercel.app/iphone-repair-behala): screen, battery, charging, camera, speaker
+- [Water damage repair](https://paras-mobile-repairing.vercel.app/water-damage-phone-repair-behala): ₹800–₹3,000
+- [Dead phone / motherboard repair](https://paras-mobile-repairing.vercel.app/dead-phone-motherboard-repair-behala): ₹1,000–₹5,000
+- Also: software, camera, speaker/mic, data recovery; chargers, cables, earphones, tempered glass and covers; mobile recharge
+
+## Policies
+- Free check-up (diagnosis and price quote); no repair starts until the customer agrees to the price
+- Warranty of at least 15 days on every repair; the exact period is written on the bill
+- Customers can watch their phone being repaired
+- Free standard tempered glass with each paid screen replacement (T&C apply)
