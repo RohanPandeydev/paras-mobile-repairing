@@ -269,6 +269,43 @@ export const SERVICES: ServicePageData[] = [
     ],
     related: ["screen-replacement-behala", "iphone-repair-behala", "battery-replacement-behala"],
   },
+  {
+    slug: "used-phone-check-behala",
+    name: "Used Phone Check Before Buying",
+    h1: "Second-hand Phone Check Before You Buy – Behala, Kolkata",
+    title: "Used / Second-hand Phone Check Before Buying in Behala, Kolkata | Paras Mobile",
+    description:
+      "Buying a used phone from OLX, a friend or a shop? Get it checked at Paras Mobile, D.H. Road, Behala – battery, screen, camera, charging, network and signs of earlier repair. ₹100 – ₹150.",
+    intro:
+      "Before you pay for a second-hand phone, bring it to our shop near Balananda Hospital, Behala. We check it in front of you and tell you honestly what is working, what is not, and what a repair would cost – so you know what you are buying.",
+    problems: [
+      "Buying a used phone from OLX, Facebook or a friend",
+      "Want to know the real battery condition",
+      "Not sure if the screen or parts were replaced before",
+      "Need to check camera, speaker, mic, charging and network",
+      "Want to know if the phone is still logged in to the old owner's account",
+    ],
+    prices: [{ item: "Used phone check (report before you buy)", price: "₹100 – ₹150" }],
+    faqs: [
+      {
+        q: "What do you check?",
+        a: "Battery condition, screen and touch, cameras, speaker and mic, charging, buttons, SIM and network, signs of water damage or earlier repair, and whether the IMEI matches the box. We also check that the old owner's Google or iCloud account has been removed.",
+      },
+      {
+        q: "Do you unlock phones?",
+        a: "No. If a phone is still locked to someone else's account, we tell you not to buy it until the seller removes their account. We never unlock locked phones.",
+      },
+      {
+        q: "Can you tell me if the phone is stolen?",
+        a: "We can't confirm that. You can check the phone's IMEI yourself on the government's Sanchar Saathi portal, and we can show you how to find the IMEI.",
+      },
+      {
+        q: "Do you guarantee the phone after checking?",
+        a: "No. We give you an honest report of the phone's condition on the day of the check. The guarantee, if any, has to come from the seller.",
+      },
+    ],
+    related: ["phone-data-transfer-behala", "battery-replacement-behala", "screen-replacement-behala"],
+  },
 ];
 
 export const serviceBySlug = (slug: string) => SERVICES.find((s) => s.slug === slug);
