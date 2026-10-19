@@ -55,7 +55,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 pt-16 pb-28 lg:pb-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white">
@@ -126,8 +126,13 @@ export default function Hero() {
           </div>
 
           {/* Right - Animated Phone Assembly */}
-          <div className="hidden lg:flex justify-center">
-            <PhoneAssembly />
+          {/* The animation is drawn at 420x540; on small screens it is scaled down inside a box of the scaled size */}
+          <div className="flex justify-center">
+            <div className="relative w-[315px] h-[405px] sm:w-[420px] sm:h-[540px]">
+              <div className="absolute top-0 left-0 origin-top-left scale-75 sm:scale-100">
+                <PhoneAssembly />
+              </div>
+            </div>
           </div>
         </div>
       </div>
