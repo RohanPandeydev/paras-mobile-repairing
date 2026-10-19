@@ -232,6 +232,43 @@ export const SERVICES: ServicePageData[] = [
     ],
     related: ["water-damage-phone-repair-behala", "charging-port-repair-behala", "battery-replacement-behala"],
   },
+  {
+    slug: "phone-data-transfer-behala",
+    name: "Data Transfer & New Phone Setup",
+    h1: "New Phone Setup & Data Transfer in Behala, Kolkata",
+    title: "Phone Data Transfer & New Phone Setup in Behala, Kolkata | Paras Mobile",
+    description:
+      "Bought a new phone? We move your WhatsApp chats, photos and contacts from your old phone – Android to Android and Android to iPhone – at Paras Mobile, D.H. Road, Behala.",
+    intro:
+      "Bought a new phone and don't want to lose your WhatsApp chats, photos or contacts? We move them from your old phone to the new one at our shop near Balananda Hospital, Behala – Android to Android and Android to iPhone – with you sitting at the counter, and we set the new phone up for you.",
+    problems: [
+      "New phone bought, old WhatsApp chats needed on it",
+      "Photos and videos to move from the old phone",
+      "Contacts and phone numbers to copy across",
+      "Moving from Android to iPhone",
+      "Need help setting up a new phone (accounts, apps, font size)",
+    ],
+    prices: [{ item: "Data transfer & new phone setup", price: "₹100 – ₹200" }],
+    faqs: [
+      {
+        q: "Which phones can you transfer data between?",
+        a: "Android to Android, and Android to iPhone. Bring both phones, charged, with their screen locks known to you.",
+      },
+      {
+        q: "Can WhatsApp chats move from Android to a new iPhone?",
+        a: "Yes, using WhatsApp's own transfer method. It needs the iPhone to be new or reset, so it is best done before you start using the iPhone. We check this with you first.",
+      },
+      {
+        q: "Do you keep a copy of my data?",
+        a: "No. The transfer is done with you at the counter, directly from your old phone to your new one, and we do not keep any copy of your photos, chats or contacts.",
+      },
+      {
+        q: "How much does it cost?",
+        a: "₹100 – ₹200, depending on how much data there is and which phones they are. We tell you the exact price before we start.",
+      },
+    ],
+    related: ["screen-replacement-behala", "iphone-repair-behala", "battery-replacement-behala"],
+  },
 ];
 
 export const serviceBySlug = (slug: string) => SERVICES.find((s) => s.slug === slug);

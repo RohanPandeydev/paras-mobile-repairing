@@ -120,7 +120,7 @@ export default async function ServicePage({ params }: Props) {
               </table>
             </div>
             <p className="text-sm text-[#8494a7] mt-3">
-              Standard price ranges. The exact price depends on your model and is told after the free check-up.
+              Prices depend on your phone model. The exact price is always told before we start.
             </p>
           </section>
 
