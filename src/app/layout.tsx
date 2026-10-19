@@ -86,7 +86,11 @@ const localBusiness = {
     "@type": "Place",
     name,
   })),
-  sameAs: ["https://www.facebook.com/profile.php?id=61595165264713"],
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61595165264713",
+    "https://www.instagram.com/pinturao5416/",
+    "https://www.youtube.com/@parasmobilebehala",
+  ],
   makesOffer: [
     "Screen replacement",
     "Battery replacement",

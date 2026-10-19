@@ -90,6 +90,19 @@ export default function Footer() {
                 <span>Mon-Sun: 10 AM - 10 PM</span>
               </li>
             </ul>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2 mt-5 text-sm text-[#8494a7]">
+              {[
+                { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61595165264713" },
+                { label: "Instagram", href: "https://www.instagram.com/pinturao5416/" },
+                { label: "YouTube", href: "https://www.youtube.com/@parasmobilebehala" },
+              ].map((social) => (
+                <li key={social.label}>
+                  <a href={social.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline underline-offset-4 decoration-primary/40">
+                    {social.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
