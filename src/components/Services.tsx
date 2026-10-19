@@ -100,7 +100,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-black text-white/90">
             Complete Mobile <span className="gradient-text">Repair Solutions</span>
           </h2>
-          <p className="text-[#5a6a7e] mt-4">
+          <p className="text-[#8494a7] mt-4">
             From screen cracks to motherboard issues — we fix everything.
             All brands, all models, one stop solution.
           </p>
@@ -131,7 +131,7 @@ export default function Services() {
                 <h3 className="font-bold text-xl text-white/90 mb-2 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-[#4a5a6e] text-sm leading-relaxed mb-4">
+                <p className="text-[#8494a7] text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
 

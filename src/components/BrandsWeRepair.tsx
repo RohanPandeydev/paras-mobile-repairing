@@ -59,7 +59,7 @@ export default function BrandsWeRepair() {
           ))}
         </div>
 
-        <p className="text-center text-[#4a5a6e] mt-8 text-sm">
+        <p className="text-center text-[#8494a7] mt-8 text-sm">
           + All other Android & iOS brands. Your brand not listed? We still fix it!
         </p>
       </div>

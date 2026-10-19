@@ -83,7 +83,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="notranslate flex items-center gap-1" translate="no">
-      <Languages size={12} className="text-[#6b7b8f]" aria-hidden />
+      <Languages size={12} className="text-[#8494a7]" aria-hidden />
       <div role="group" aria-label="Choose language" className="flex rounded-full border border-[#1e2738] overflow-hidden">
         {LANGS.map((l) => (
           <button
@@ -93,7 +93,7 @@ export default function LanguageSwitcher() {
             aria-pressed={lang === l.code}
             onClick={() => lang !== l.code && chooseLang(l.code)}
             className={`px-2 py-0.5 text-[11px] font-semibold transition-colors ${
-              lang === l.code ? "bg-primary/90 text-white" : "text-[#8494a7] hover:text-primary"
+              lang === l.code ? "bg-primary text-[#0d1117]" : "text-[#8494a7] hover:text-primary"
             }`}
           >
             {l.label}

@@ -179,7 +179,7 @@ export default function WhyUs() {
               <p className="text-3xl md:text-4xl font-black text-white/90">
                 {stat.value}
               </p>
-              <p className="text-sm text-[#5a6a7e] mt-1 font-medium">
+              <p className="text-sm text-[#8494a7] mt-1 font-medium">
                 {stat.label}
               </p>
             </div>

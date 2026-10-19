@@ -25,7 +25,7 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-black text-white/90">
             Visit Us <span className="gradient-text">Today</span>
           </h2>
-          <p className="text-[#5a6a7e] mt-4">
+          <p className="text-[#8494a7] mt-4">
             Diamond Harbour Road, Behala — near Balanand Hospital. Easy to find!
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                   Gholeshapur, Behala, Kolkata, West Bengal 700034
                 </p>
                 <a
-                  href="https://www.google.com/maps/place/PARAS+MOBILE+REPAIRING+AND+SERVICE+CENTRE/@22.5067602,88.3202662,17z"
+                  href="https://www.google.com/maps/dir/?api=1&destination=22.5067602,88.3202662"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-primary text-sm font-bold mt-2 hover:underline"
@@ -80,7 +80,7 @@ export default function Contact() {
                 <a href="tel:+918981572938" className="text-2xl font-black text-primary hover:underline">
                   089815 72938
                 </a>
-                <p className="text-sm text-[#5a6a7e] mt-1">Call for instant quote</p>
+                <p className="text-sm text-[#8494a7] mt-1">Call for instant quote</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export default function Contact() {
                 >
                   Chat with us on WhatsApp
                 </a>
-                <p className="text-sm text-[#5a6a7e] mt-1">Send damage photos for quick quote</p>
+                <p className="text-sm text-[#8494a7] mt-1">Send damage photos for quick quote</p>
               </div>
             </div>
 
@@ -112,7 +112,7 @@ export default function Contact() {
                 <h3 className="font-bold text-white/90 mb-2">Business Hours</h3>
                 <div className="space-y-1.5 text-sm">
                   <div className="flex justify-between gap-8">
-                    <span className="text-[#5a6a7e]">Mon - Sun</span>
+                    <span className="text-[#8494a7]">Mon - Sun</span>
                     <span className="font-bold text-white/90">10 AM - 10 PM</span>
                   </div>
                 </div>

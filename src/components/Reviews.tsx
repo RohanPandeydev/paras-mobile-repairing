@@ -83,7 +83,7 @@ export default function Reviews() {
             <div className="h-14 w-px bg-[#2a3545]" />
             <div className="text-left">
               <p className="font-bold text-white/90">Google Reviews</p>
-              <p className="text-sm text-[#5a6a7e]">5 reviews</p>
+              <p className="text-sm text-[#8494a7]">5 reviews</p>
               <div className="flex gap-1 mt-1">
                 <span className="text-[10px] bg-green-500/15 text-green-400 font-bold px-2 py-0.5 rounded-full">4× ★★★★★</span>
                 <span className="text-[10px] bg-blue-500/15 text-blue-400 font-bold px-2 py-0.5 rounded-full">1× ★★★★</span>
@@ -122,7 +122,7 @@ export default function Reviews() {
                   &ldquo;{review.text}&rdquo;
                 </p>
               ) : (
-                <p className="text-[#5a6a7e] text-sm italic mb-5">Star rating on Google, no written review.</p>
+                <p className="text-[#8494a7] text-sm italic mb-5">Star rating on Google, no written review.</p>
               )}
 
               {/* Author */}
@@ -139,7 +139,7 @@ export default function Reviews() {
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-[#4a5a6e]">{review.time} · Google</p>
+                  <p className="text-xs text-[#8494a7]">{review.time} · Google</p>
                 </div>
               </div>
             </div>

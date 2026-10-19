@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[rgba(255,255,255,0.06)] mt-12 pt-8 text-center text-sm text-[#5a6a7e]">
+        <div className="border-t border-[rgba(255,255,255,0.06)] mt-12 pt-8 text-center text-sm text-[#8494a7]">
           <p>
             © {new Date().getFullYear()} Paras Mobile Repairing & Service
             Centre. All rights reserved.

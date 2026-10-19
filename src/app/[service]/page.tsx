@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, ChevronRight, MessageCircle, Phone } from "lucide-react";
+import { Check, ChevronRight, MapPin, MessageCircle, Phone } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -158,6 +158,14 @@ export default async function ServicePage({ params }: Props) {
               Paras Mobile Repairing &amp; Service Centre — 151, Diamond Harbour Road, Behala, near Balananda Hospital,
               Kolkata 700034. Open 7 days, 10 AM – 10 PM. Serving Behala, Thakurpukur, Sarsuna, Parnasree, Taratala and Joka.
             </p>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=22.5067602,88.3202662"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 border border-[#2a3545] hover:border-primary text-[#c3cdd8] hover:text-primary px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              <MapPin size={16} /> Get directions
+            </a>
             <p className="text-xs text-[#8494a7] mt-3">
               Independent repair shop — not an authorised service centre of any phone brand. Offers: T&amp;C apply.
             </p>
